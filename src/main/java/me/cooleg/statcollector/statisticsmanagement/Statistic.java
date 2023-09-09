@@ -1,8 +1,10 @@
 package me.cooleg.statcollector.statisticsmanagement;
 
+import org.bukkit.event.Listener;
+
 import java.util.UUID;
 
-public interface Statistic {
+public interface Statistic extends Listener {
 
     String getName();
 

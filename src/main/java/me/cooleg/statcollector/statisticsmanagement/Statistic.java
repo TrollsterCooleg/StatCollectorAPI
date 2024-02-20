@@ -2,6 +2,7 @@ package me.cooleg.statcollector.statisticsmanagement;
 
 import org.bukkit.event.Listener;
 
+import java.util.Map;
 import java.util.UUID;
 
 public interface Statistic extends Listener {
@@ -15,5 +16,7 @@ public interface Statistic extends Listener {
     default void addStatistic(UUID id, double num) {}
 
     default void incrementStatistic(UUID id) {}
+
+    default Map<UUID, Double> getAllScores() {return null;}
 
 }
